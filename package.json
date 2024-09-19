@@ -1,12 +1,16 @@
 {
-  "name": "granadautos-strapi",
-  "private": true,
+  "name": "ananda-strapi",
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "private": true,
+  "description": "Strapi CMS for Ananda Jaboneria",
+  "license": "MIT",
+  "author": {
+    "name": "Juan Hernandez"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -22,15 +26,11 @@
     "react-router-dom": "5.3.4",
     "styled-components": "5.3.3"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "203e9873-a168-4220-bfce-66d810a891d9"
-  },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "203e9873-a168-4220-bfce-66d810a891d9"
+  }
 }

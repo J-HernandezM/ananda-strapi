@@ -12,6 +12,18 @@ export interface MenuItem extends Schema.Component {
   };
 }
 
+export interface ProductContent extends Schema.Component {
+  collectionName: 'components_product_contents';
+  info: {
+    displayName: 'content';
+    icon: 'archive';
+  };
+  attributes: {
+    amount: Attribute.Integer;
+    unit: Attribute.Enumeration<['gr', 'ml']>;
+  };
+}
+
 export interface ProductPrice extends Schema.Component {
   collectionName: 'components_product_prices';
   info: {
@@ -28,6 +40,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'menu.item': MenuItem;
+      'product.content': ProductContent;
       'product.price': ProductPrice;
     }
   }
