@@ -2,7 +2,7 @@ version: "3"
 services:
   strapi:
     container_name: strapi
-    image: ghcr.io/j-Hernandezm/ananda-strapi:main
+    image: ghcr.io/j-hernandezm/ananda-strapi:main
     restart: unless-stopped
     env_file: .env
     environment:
