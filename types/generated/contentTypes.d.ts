@@ -763,6 +763,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
       }>;
     content: Attribute.Component<'product.content'>;
     totalWeight: Attribute.Integer;
+    ingredients: Attribute.String;
+    usage: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
