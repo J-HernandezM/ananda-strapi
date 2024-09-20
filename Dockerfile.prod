@@ -27,6 +27,9 @@ ENV PATH /opt/node_modules/.bin:$PATH
 # Rebuild sharp module
 RUN npm rebuild sharp
 
+# Ensure the public/uploads directory exists and set correct permissions
+RUN mkdir -p /opt/app/public/uploads && chown -R node:node /opt/app/public/uploads
+
 RUN apk del build-base gcc autoconf automake zlib-dev libpng-dev
 RUN chown -R node:node /opt/app
 USER node
