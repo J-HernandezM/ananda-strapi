@@ -2,7 +2,7 @@ version: "3"
 services:
   strapi:
     container_name: strapi
-    image: ghcr.io/santb08/strapi-ecommerce:main
+    image: anandastrapi:latest
     restart: unless-stopped
     env_file: .env
     environment:
