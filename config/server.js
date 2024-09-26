@@ -9,14 +9,4 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  ssl: {
-    key: fs.readFileSync(
-      "/etc/letsencrypt/live/api.anandajaboneria.com/privkey.pem",
-      "utf8"
-    ),
-    cert: fs.readFileSync(
-      "/etc/letsencrypt/live/api.anandajaboneria.com/fullchain.pem",
-      "utf8"
-    ),
-  },
 });
